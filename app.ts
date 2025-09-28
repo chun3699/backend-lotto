@@ -18,27 +18,3 @@ app.use("/lotto", lotto);
 app.use("/prize", prize);
 app.use("/wallet", wallet);
 
-// หา IP ของเครื่อง
-// function getLocalIP(): string {
-//   const interfaces = os.networkInterfaces();
-//   for (const name of Object.keys(interfaces)) {
-//     for (const iface of interfaces[name]!) {
-//       if (iface.family === "IPv4" && !iface.internal) {
-//         return iface.address;
-//       }
-//     }
-//   }
-//   return "localhost";
-// }
-
-// const localIP = getLocalIP();
-
-// const PORT = 3000;
-
-//คำสั่งรันserver: npx nodemon server.ts
-
-// app.listen(PORT, '127.0.0.1', () => {
-//   console.log(`Server running at http://${localIP}:${PORT}/`);
-//   console.log(`Login route: http://localhost:${PORT}/`);
-//   console.log(`Register route: http://localhost:${PORT}/register`);
-// });
