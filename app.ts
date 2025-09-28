@@ -6,8 +6,11 @@ import { router as prize } from "./controller/prize";
 import { router as wallet } from "./controller/wallet";
 import bodyParser from "body-parser";
 import * as os from "os"; // <-- แก้ตรงนี้
+import cors from "cors";
 
 export const app = express();
+
+app.use(cors()); // เปิดให้เรียกจากทุก origin
 
 app.use(bodyParser.text());
 app.use(bodyParser.json());
